@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Factorial</title>
+    </head>
+    <body>
+        <p id="fact"></p>
+        <script type="text/javascript">
+            function factorial(n) {
+                if (n === 0) {
+                  return 1; // Base case: Factorial of 0 is 1
+                } else {
+                  return n * factorial(n - 1); // Recursive step
+                }
+              }
+              const result = factorial(43);
+              console.log("Factorial of 43 is:", result);   
+              document.getElementById("fact").innerHTML="Factorial of last two digits of matric numer '21CJ029243' is:"+result;          
+        </script>
+    </body>
+</html>
